@@ -1,0 +1,11 @@
+﻿# clion
+.idea/
+
+# vs
+.vs
+
+log*
+venv*
+
+
+

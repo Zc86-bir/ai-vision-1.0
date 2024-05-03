@@ -22,12 +22,21 @@
 * （4）后台管理模块，新增了合成报警视频的管理功能，可以对报警视频进行增删改查，布控中的视频产生的报警视频会出现在这个功能中。同时在布控过程中，支持绘制布控周界区域和选择监测分类。
 
 ### v3系列所有子版本介绍
-| 子版本 | OpenVINO | TensorRT | 支持算法 | 支持系统 | 更新功能点 | 视频介绍地址 |
-| :----: | :----: | :----: | :----: | :----- | :----- | :----- |
-| 3.0  | 支持 | 不支持 | Yolo8 | Windows | 见上述 v3版本 vs v1和v2 | https://www.bilibili.com/video/BV1Xy4y1P7M2 |
-| 3.1  | 不支持 | 支持 | Yolo8 | Windows | 主要支持C++版TensorR算法推理 | https://www.bilibili.com/video/BV1F64y1L7dq |
-| 3.2  | 支持 | 不支持 | Yolo8 | Windows/Linux| 主要新增支持Linux | https://www.bilibili.com/video/BV12g4y167u2 |
-| 3.3  | 支持 | 不支持 | Yolo8 | Windows/Linux| 主要新增增持摄像头管理，升级浏览器插件 | https://www.bilibili.com/video/BV1pK421h74U |
+| 子版本 | OpenVINO | TensorRT | 支持算法 | 支持系统 | 视频介绍地址 |
+| :----: | :----: | :----: | :----: | :----- | :----- |
+| 3.0  | 支持 | 不支持 | Yolo8 | Windows  | https://www.bilibili.com/video/BV1Xy4y1P7M2 |
+| 3.1  | 不支持 | 支持 | Yolo8 | Windows | https://www.bilibili.com/video/BV1F64y1L7dq |
+| 3.2  | 支持 | 不支持 | Yolo8 | Windows/Linux | https://www.bilibili.com/video/BV12g4y167u2 |
+| 3.3  | 支持 | 不支持 | Yolo8 | Windows/Linux | https://www.bilibili.com/video/BV1pK421h74U |
+
+### v3系列所有子版本更新功能点
+| 子版本 | 更新功能点  |
+| :----: | :----- |
+| 3.0  | 见上述 v3版本 vs v1和v2 |
+| 3.1  | 主要新增支持C++版TensorR算法推理 |
+| 3.2  | 主要新增支持Linux |
+| 3.3  | 主要新增支持摄像头管理模块，升级浏览器插件模块 |
+
 
 ### v3系列后续发展计划
 * v3会一直保持更新

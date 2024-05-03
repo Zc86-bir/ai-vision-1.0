@@ -15,19 +15,19 @@
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
 * v4版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v4
 
-### v3版本相比于v1和v2的主要变化
+### v3版本 vs v1和v2
 * （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO和TensorRT，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8
 * （2）v1和v2仅支持检测到目标就触发报警。v3则支持选择指定目标触发周界入侵报警。
 * （3）v1和v2分析器模块和算法模块是独立的，是C++和Python两种语言分别开发的两个完全独立的模块，分析器模块调用算法模块的接口实现计算。v3的分析器模块和算法模块是合并在一起的，全部都是C++开发。
 * （4）后台管理模块，新增了合成报警视频的管理功能，可以对报警视频进行增删改查，布控中的视频产生的报警视频会出现在这个功能中。同时在布控过程中，支持绘制布控周界区域和选择监测分类。
 
 ### v3系列所有子版本介绍
-| 子版本 | OpenVINO | TensorRT | 支持基础算法 | 支持系统 | 视频介绍地址 |
-| :----: | :----: | :----: | :----: | :----- | :----- |
-| 3.0  | 支持 | 不支持 | Yolo8 | Windows | https://www.bilibili.com/video/BV1Xy4y1P7M2 |
-| 3.1  | 不支持 | 支持 | Yolo8 | Windows | https://www.bilibili.com/video/BV1F64y1L7dq |
-| 3.2  | 支持 | 不支持 | Yolo8 | Windows/Linux | https://www.bilibili.com/video/BV12g4y167u2 |
-| 3.3  | 支持 | 不支持 | Yolo8 | Windows/Linux | https://www.bilibili.com/video/BV1pK421h74U |
+| 子版本 | OpenVINO | TensorRT | 支持算法 | 支持系统 | 更新功能点 | 视频介绍地址 |
+| :----: | :----: | :----: | :----: | :----- | :----- | :----- |
+| 3.0  | 支持 | 不支持 | Yolo8 | Windows | 见上述 v3版本 vs v1和v2 | https://www.bilibili.com/video/BV1Xy4y1P7M2 |
+| 3.1  | 不支持 | 支持 | Yolo8 | Windows | 主要支持C++版TensorR算法推理 | https://www.bilibili.com/video/BV1F64y1L7dq |
+| 3.2  | 支持 | 不支持 | Yolo8 | Windows/Linux| 主要新增支持Linux | https://www.bilibili.com/video/BV12g4y167u2 |
+| 3.3  | 支持 | 不支持 | Yolo8 | Windows/Linux| 主要新增增持摄像头管理，升级浏览器插件 | https://www.bilibili.com/video/BV1pK421h74U |
 
 ### v3系列后续发展计划
 * v3会一直保持更新
@@ -89,13 +89,13 @@ ffmpeg  -rtsp_transport tcp -i url -fflags nobuffer -max_delay 1 -threads 5  -pr
 
 * 通过ffmpeg命令行实现的推流功能，延迟总是存在的，且无法解决。但基于ffmpeg开发库却可以彻底解决延迟推流的问题，可以参考我的视频：https://space.bilibili.com/487906612
 
-<img width="720" alt="控制面板" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/1.png">
-<img width="720" alt="视频流管理" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/2.png">
-<img width="720" alt="报警视频管理" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/3.png">
-<img width="720" alt="算法管理" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/4.png">
-<img width="720" alt="布控管理" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/5.png">
-<img width="720" alt="编辑布控" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/6.png">
-<img width="720" alt="播放算法视频流" src="https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3/raw/master/data/7.png">
+<img width="720" alt="控制面板" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/1.png">
+<img width="720" alt="添加摄像头" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/2.png">
+<img width="720" alt="报警视频管理" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/3.png">
+<img width="720" alt="算法管理" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/4.png">
+<img width="720" alt="布控管理" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/5.png">
+<img width="720" alt="编辑布控" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/6.png">
+<img width="720" alt="播放算法视频流" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/7.png">
 
 
 

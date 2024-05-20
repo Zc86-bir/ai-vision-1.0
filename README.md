@@ -28,7 +28,7 @@
 | 3.1  | Windows | nvidia | tensorrt | [查看](https://www.bilibili.com/video/BV1F64y1L7dq) |
 | 3.2  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV12g4y167u2) |
 | 3.3  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV1pK421h74U) |
-| 3.40  | Windows/Linux |  |  | [查看](https://www.bilibili.com/video/BV1tH4y1G775) |
+| 3.40  | Windows/Linux | 不限 | api | [查看](https://www.bilibili.com/video/BV1tH4y1G775) |
 | 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime |  |
 
 

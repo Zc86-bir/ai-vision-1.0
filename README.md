@@ -16,26 +16,32 @@
 * v4版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v4
 
 ### v3版本 vs v1和v2
-* （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO和TensorRT，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8
+* （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO，TensorRT，ONNXRuntime，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8
 * （2）v1和v2仅支持检测到目标就触发报警。v3则支持选择指定目标触发周界入侵报警。
 * （3）v1和v2分析器模块和算法模块是独立的，是C++和Python两种语言分别开发的两个完全独立的模块，分析器模块调用算法模块的接口实现计算。v3的分析器模块和算法模块是合并在一起的，全部都是C++开发。
 * （4）后台管理模块，新增了合成报警视频的管理功能，可以对报警视频进行增删改查，布控中的视频产生的报警视频会出现在这个功能中。同时在布控过程中，支持绘制布控周界区域和选择监测分类。
 
 ### v3系列所有子版本介绍
-| 子版本 | OpenVINO | TensorRT | 支持算法 | 支持系统 | 视频介绍地址 |
-| :----: | :----: | :----: | :----: | :----- | :----- |
-| 3.0  | 支持 | 不支持 | Yolo8 | Windows  | https://www.bilibili.com/video/BV1Xy4y1P7M2 |
-| 3.1  | 不支持 | 支持 | Yolo8 | Windows | https://www.bilibili.com/video/BV1F64y1L7dq |
-| 3.2  | 支持 | 不支持 | Yolo8 | Windows/Linux | https://www.bilibili.com/video/BV12g4y167u2 |
-| 3.3  | 支持 | 不支持 | Yolo8 | Windows/Linux | https://www.bilibili.com/video/BV1pK421h74U |
+| 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
+| :----: | :----: | :----: | :----: | :----- |
+| 3.0  | Windows | intel | openvino  | [查看](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
+| 3.1  | Windows | nvidia | tensorrt | [查看](https://www.bilibili.com/video/BV1F64y1L7dq) |
+| 3.2  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV12g4y167u2) |
+| 3.3  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV1pK421h74U) |
+| 3.40  | Windows/Linux |  |  | [查看](https://www.bilibili.com/video/BV1tH4y1G775) |
+| 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime |  |
+
+
 
 ### v3系列所有子版本更新功能点
 | 子版本 | 更新功能点  |
 | :----: | :----- |
 | 3.0  | 见上述 v3版本 vs v1和v2 |
-| 3.1  | 主要新增支持C++版TensorRT算法推理功能 |
+| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
 | 3.2  | 主要新增支持Linux |
 | 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
+| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
+| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
 
 
 ### v3系列后续发展计划
@@ -50,14 +56,11 @@
 * v3版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
 * v3版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
 
-### 硬件说明
-* OpenVINO对应的硬件是英特尔处理器
-* TensorRT对应的硬件是英伟达显卡
 
 ### 快速体验程序
 
 #### Windows版启动运行
-* 第一步下载程序：比如切换到v3.2_windows_exe，这表示想要运行v3.2版本的Windows版本，按照下载地址.txt内容下载
+* 第一步下载程序：比如切换到v3.2_windows_exe，这表示运行v3.2版本的Windows版本，按照"下载地址.txt"下载软件
 * 第二步运行程序：下载后，双击 VideoAnalyzer.exe启动程序，观察窗口提示如果没有报错，即表示启动成功
 * 第三步打开程序：在浏览器输入 http://127.0.0.1:9001 系统默认账号 用户名：admin 密码：admin888
 * 第四步停止程序：关闭启动程序窗口即可
@@ -77,6 +80,7 @@
 * v3.1版本视频介绍地址 https://www.bilibili.com/video/BV1F64y1L7dq
 * v3.2版本视频介绍地址 https://www.bilibili.com/video/BV12g4y167u2
 * v3.3版本视频介绍地址 https://www.bilibili.com/video/BV1pK421h74U
+* v3.40版本视频介绍地址 https://www.bilibili.com/video/BV1tH4y1G775
 
 
 ### ffmpeg命令行推流

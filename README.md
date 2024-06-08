@@ -81,7 +81,7 @@
 * v3.2版本视频介绍地址 https://www.bilibili.com/video/BV12g4y167u2
 * v3.3版本视频介绍地址 https://www.bilibili.com/video/BV1pK421h74U
 * v3.40版本视频介绍地址 https://www.bilibili.com/video/BV1tH4y1G775
-
+* v3.41版本视频介绍地址 https://www.bilibili.com/video/BV1hJ4m1w7tP
 
 ### ffmpeg命令行推流
 

@@ -7,11 +7,23 @@
 * 微信：bilibili_bxc
 * 哔哩哔哩主页：https://space.bilibili.com/487906612
 
-### 软件介绍
+### 不同版本下载地址
 * v1版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v1
 * v2版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v2
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
 * v4版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v4
+
+### v3更新记录
+| 子版本 | 更新功能点  |
+| :----: | :----- |
+| 3.0  | 见上述 v3版本 vs v1和v2 |
+| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
+| 3.2  | 主要新增支持Linux |
+| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
+| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
+| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
+| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
+
 
 ### v3版本 vs v1和v2
 * （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO，TensorRT，ONNXRuntime，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8
@@ -19,7 +31,7 @@
 * （3）v1和v2分析器模块和算法模块是独立的，是C++和Python两种语言分别开发的两个完全独立的模块，分析器模块调用算法模块的接口实现计算。v3的分析器模块和算法模块是合并在一起的，全部都是C++开发。
 * （4）后台管理模块，新增了合成报警视频的管理功能，可以对报警视频进行增删改查，布控中的视频产生的报警视频会出现在这个功能中。同时在布控过程中，支持绘制布控周界区域和选择监测分类。
 
-### v3系列所有子版本介绍
+### v3版本部署环境介绍
 | 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
 | :----: | :----: | :----: | :----: | :----- |
 | 3.0  | Windows | intel | openvino  | [查看](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
@@ -30,17 +42,6 @@
 | 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
 | 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime |  |
 
-
-### v3系列所有子版本更新功能点
-| 子版本 | 更新功能点  |
-| :----: | :----- |
-| 3.0  | 见上述 v3版本 vs v1和v2 |
-| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
-| 3.2  | 主要新增支持Linux |
-| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
-| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
-| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
-| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
 
 ### v3系列后续发展计划
 * v3会一直保持更新

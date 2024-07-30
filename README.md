@@ -6,10 +6,8 @@
 * QQ：1402990689
 * 微信：bilibili_bxc
 * 哔哩哔哩主页：https://space.bilibili.com/487906612
-* gitee下载地址：https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
-* github下载地址：https://github.com/any12345com/BXC_VideoAnalyzer_v3
 
-### 软件版本介绍
+### 软件介绍
 * v1版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v1
 * v2版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v2
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
@@ -29,8 +27,8 @@
 | 3.2  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV12g4y167u2) |
 | 3.3  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV1pK421h74U) |
 | 3.40  | Windows/Linux | 不限 | api | [查看](https://www.bilibili.com/video/BV1tH4y1G775) |
-| 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime |  |
-
+| 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
+| 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime |  |
 
 
 ### v3系列所有子版本更新功能点
@@ -42,7 +40,7 @@
 | 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
 | 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
 | 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
-
+| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
 
 ### v3系列后续发展计划
 * v3会一直保持更新

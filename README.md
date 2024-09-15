@@ -11,7 +11,11 @@
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
 * v4版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v4
 
-### 更新记录
+### v3 获取源码
+* v3版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
+* v3版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
+
+### v3 更新记录
 | 子版本 | 更新功能点  |
 | :----: | :----- |
 | 3.0  | 见上述 v3版本 vs v1和v2 |
@@ -32,7 +36,6 @@
 | 3.40  | Windows/Linux | 不限 | api | [查看视频教程](https://www.bilibili.com/video/BV1tH4y1G775) |
 | 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
 | 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
-
 
 
 ### v1,v2,v3 相关视频教程
@@ -59,13 +62,6 @@
 * （2）v1和v2仅支持检测到目标就触发报警。v3则支持选择指定目标触发周界入侵报警。
 * （3）v1和v2分析器模块和算法模块是独立的，是C++和Python两种语言分别开发的两个完全独立的模块，分析器模块调用算法模块的接口实现计算。v3的分析器模块和算法模块是合并在一起的，全部都是C++开发。
 * （4）后台管理模块，新增了合成报警视频的管理功能，可以对报警视频进行增删改查，布控中的视频产生的报警视频会出现在这个功能中。同时在布控过程中，支持绘制布控周界区域和选择监测分类。
-
-
-### v1,v2,v3 获取源码
-* v1版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v1
-* v2版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v2
-* v3版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
-* v3版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
 
 
 ### 快速体验程序

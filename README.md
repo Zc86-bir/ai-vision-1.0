@@ -6,14 +6,12 @@
 * QQ：1402990689
 * 微信：bilibili_bxc
 * 哔哩哔哩主页：https://space.bilibili.com/487906612
-
-### 不同版本下载地址
 * v1版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v1
 * v2版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v2
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
 * v4版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v4
 
-### v3更新记录
+### 更新记录
 | 子版本 | 更新功能点  |
 | :----: | :----- |
 | 3.0  | 见上述 v3版本 vs v1和v2 |
@@ -24,32 +22,46 @@
 | 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
 | 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
 
+### v3不同版本支持硬件和系统说明
+| 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
+| :----: | :----: | :----: | :----: | :----- |
+| 3.0  | Windows | intel | openvino  | [查看视频教程](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
+| 3.1  | Windows | nvidia | tensorrt | [查看视频教程](https://www.bilibili.com/video/BV1F64y1L7dq) |
+| 3.2  | Windows/Linux | intel | openvino | [查看视频教程](https://www.bilibili.com/video/BV12g4y167u2) |
+| 3.3  | Windows/Linux | intel | openvino | [查看视频教程](https://www.bilibili.com/video/BV1pK421h74U) |
+| 3.40  | Windows/Linux | 不限 | api | [查看视频教程](https://www.bilibili.com/video/BV1tH4y1G775) |
+| 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
+| 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
 
-### v3版本 vs v1和v2
+
+
+### v1,v2,v3 相关视频教程
+
+* v1版本视频介绍地址 https://www.bilibili.com/video/BV1dG4y1k77o
+* v1版本源码讲解（1）拉流，解码，实时算法分析，合成报警视频，编码，推流 https://www.bilibili.com/video/BV1L84y177xc
+* v1版本源码讲解（2）音频解码，音频重采样，音频编码，合成报警视频 https://www.bilibili.com/video/BV1984y1L7zB
+* C++调用Python，支持传递图片格式的数据，支持调用Python版AI算法模型，C++传递Mat格式的图片数据到Python https://www.bilibili.com/video/BV1Vd4y1p7GE
+* v2版本视频介绍地址 https://www.bilibili.com/video/BV1CG411f7ak
+* v3.0版本视频介绍地址 https://www.bilibili.com/video/BV1Xy4y1P7M2
+* v3.1版本视频介绍地址 https://www.bilibili.com/video/BV1F64y1L7dq
+* v3.2版本视频介绍地址 https://www.bilibili.com/video/BV12g4y167u2
+* v3.3版本视频介绍地址 https://www.bilibili.com/video/BV1pK421h74U
+* v3.40版本视频介绍地址 https://www.bilibili.com/video/BV1tH4y1G775
+* v3.41版本视频介绍地址 https://www.bilibili.com/video/BV1hJ4m1w7tP
+* v3.42版本视频介绍地址 https://www.bilibili.com/video/BV1rf421v74R
+
+### Ubuntu系统编译v3.2的视频教程
+* [https://www.bilibili.com/video/BV1Z94y1u7u8](https://www.bilibili.com/video/BV1Z94y1u7u8)
+
+
+### v1,v2,v3 主要区别
 * （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO，TensorRT，ONNXRuntime，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8
 * （2）v1和v2仅支持检测到目标就触发报警。v3则支持选择指定目标触发周界入侵报警。
 * （3）v1和v2分析器模块和算法模块是独立的，是C++和Python两种语言分别开发的两个完全独立的模块，分析器模块调用算法模块的接口实现计算。v3的分析器模块和算法模块是合并在一起的，全部都是C++开发。
 * （4）后台管理模块，新增了合成报警视频的管理功能，可以对报警视频进行增删改查，布控中的视频产生的报警视频会出现在这个功能中。同时在布控过程中，支持绘制布控周界区域和选择监测分类。
 
-### v3版本部署环境介绍
-| 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
-| :----: | :----: | :----: | :----: | :----- |
-| 3.0  | Windows | intel | openvino  | [查看](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
-| 3.1  | Windows | nvidia | tensorrt | [查看](https://www.bilibili.com/video/BV1F64y1L7dq) |
-| 3.2  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV12g4y167u2) |
-| 3.3  | Windows/Linux | intel | openvino | [查看](https://www.bilibili.com/video/BV1pK421h74U) |
-| 3.40  | Windows/Linux | 不限 | api | [查看](https://www.bilibili.com/video/BV1tH4y1G775) |
-| 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
-| 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime |  |
 
-
-### v3系列后续发展计划
-* v3会一直保持更新
-
-### Ubuntu系统编译v3.2的视频教程
-* [https://www.bilibili.com/video/BV1Z94y1u7u8](https://www.bilibili.com/video/BV1Z94y1u7u8)
-
-### 如何获得源码
+### v1,v2,v3 获取源码
 * v1版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v1
 * v2版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v2
 * v3版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
@@ -68,32 +80,12 @@
 * 需要自己获得源码编译运行
 
 
-### 视频教程
-
-* v1版本视频介绍地址 https://www.bilibili.com/video/BV1dG4y1k77o
-* v1版本源码讲解（1）拉流，解码，实时算法分析，合成报警视频，编码，推流 https://www.bilibili.com/video/BV1L84y177xc
-* v1版本源码讲解（2）音频解码，音频重采样，音频编码，合成报警视频 https://www.bilibili.com/video/BV1984y1L7zB
-* C++调用Python，支持传递图片格式的数据，支持调用Python版AI算法模型，C++传递Mat格式的图片数据到Python https://www.bilibili.com/video/BV1Vd4y1p7GE
-* v2版本视频介绍地址 https://www.bilibili.com/video/BV1CG411f7ak
-* v3.0版本视频介绍地址 https://www.bilibili.com/video/BV1Xy4y1P7M2
-* v3.1版本视频介绍地址 https://www.bilibili.com/video/BV1F64y1L7dq
-* v3.2版本视频介绍地址 https://www.bilibili.com/video/BV12g4y167u2
-* v3.3版本视频介绍地址 https://www.bilibili.com/video/BV1pK421h74U
-* v3.40版本视频介绍地址 https://www.bilibili.com/video/BV1tH4y1G775
-* v3.41版本视频介绍地址 https://www.bilibili.com/video/BV1hJ4m1w7tP
-
 ### ffmpeg命令行推流
 
 ~~~
 
-//将本地文件推流至VideoAnalyzer（该命令行未经优化，延迟较大）
+//将视频文件test.mp4循环推流到视频行为分析系统内置的流媒体服务器
 ffmpeg -re -stream_loop -1  -i test.mp4  -rtsp_transport tcp -c copy -f rtsp rtsp://127.0.0.1:9554/live/test
-
-//将摄像头视频流推流至VideoAnalyzer（该命令行已优化，但仍然存在延迟，如果想要彻底解决推流延迟，可以参考我的视频：https://space.bilibili.com/487906612）
-ffmpeg  -rtsp_transport tcp -i url -fflags nobuffer -max_delay 1 -threads 5  -profile:v high  -preset superfast -tune zerolatency  -an -c:v h264 -crf 25 -s 1280*720   -f rtsp -bf 0  -g 5  -rtsp_transport tcp rtsp://127.0.0.1:9554/live/camera
-
-// 备注
-根目录下data文件夹中，我提供了一个test.mp4，大家可以测试，模拟视频流
 
 ~~~
 

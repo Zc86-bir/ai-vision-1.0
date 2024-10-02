@@ -14,17 +14,19 @@
 ### v3 获取源码
 * v3版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
 * v3版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
+* 大家如果看到其他任何商家出售v3源代码，希望能够去举报，均是非法行为。后续将会对获取v3升级版本的源码，提高门槛，相信那些非法出售的商家可很难通过升级门槛，进而无法向用户提供升级版本。
 
 ### v3 更新记录
 | 子版本 | 更新功能点  |
 | :----: | :----- |
-| 3.0  | 见上述 v3版本 vs v1和v2 |
+| 3.0  | 见3.0介绍视频：https://www.bilibili.com/video/BV1Xy4y1P7M2 |
 | 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
 | 3.2  | 主要新增支持Linux |
 | 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
 | 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
 | 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
 | 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
+| 3.43  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
 
 ### v3不同版本支持硬件和系统说明
 | 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
@@ -36,6 +38,7 @@
 | 3.40  | Windows/Linux | 不限 | api | [查看视频教程](https://www.bilibili.com/video/BV1tH4y1G775) |
 | 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
 | 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
+| 3.43  | Windows/Linux | intel,amd | openvino,onnxruntime  | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
 
 
 ### v1,v2,v3 相关视频教程
@@ -48,14 +51,11 @@
 * v3.0版本视频介绍地址 https://www.bilibili.com/video/BV1Xy4y1P7M2
 * v3.1版本视频介绍地址 https://www.bilibili.com/video/BV1F64y1L7dq
 * v3.2版本视频介绍地址 https://www.bilibili.com/video/BV12g4y167u2
+* （Ubuntu编译v3.2）v3.2版本视频介绍地址 https://www.bilibili.com/video/BV1Z94y1u7u8
 * v3.3版本视频介绍地址 https://www.bilibili.com/video/BV1pK421h74U
 * v3.40版本视频介绍地址 https://www.bilibili.com/video/BV1tH4y1G775
 * v3.41版本视频介绍地址 https://www.bilibili.com/video/BV1hJ4m1w7tP
 * v3.42版本视频介绍地址 https://www.bilibili.com/video/BV1rf421v74R
-
-### Ubuntu系统编译v3.2的视频教程
-* [https://www.bilibili.com/video/BV1Z94y1u7u8](https://www.bilibili.com/video/BV1Z94y1u7u8)
-
 
 ### v1,v2,v3 主要区别
 * （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO，TensorRT，ONNXRuntime，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8
@@ -75,19 +75,7 @@
 #### Linux版启动运行
 * 需要自己获得源码编译运行
 
-
-### ffmpeg命令行推流
-
-~~~
-
-//将视频文件test.mp4循环推流到视频行为分析系统内置的流媒体服务器
-ffmpeg -re -stream_loop -1  -i test.mp4  -rtsp_transport tcp -c copy -f rtsp rtsp://127.0.0.1:9554/live/test
-
-~~~
-
-### 有关ffmpeg推流的几点补充说明
-
-* 通过ffmpeg命令行实现的推流功能，延迟总是存在的，且无法解决。但基于ffmpeg开发库却可以彻底解决延迟推流的问题，可以参考我的视频：https://space.bilibili.com/487906612
+### 软件截图
 
 <img width="720" alt="控制面板" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/1.png">
 <img width="720" alt="添加摄像头" src="https://gitee.com/Vanishi/images/raw/master/BXC_VideoAnalyzer_v3/v3.3/2.png">

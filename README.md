@@ -15,41 +15,41 @@
 ### 视频行为分析系统版本介绍
 | 版本号 | 介绍 |
 | :----: | :----: |
-| 1.0  | [查看v1.0介绍视频](https://www.bilibili.com/video/BV1dG4y1k77o) |
-| 1.0  | [查看v1.0源码第1讲介绍视频](https://www.bilibili.com/video/BV1L84y177xc) |
-| 1.0  | [查看v1.0源码第2讲介绍视频](https://www.bilibili.com/video/BV1984y1L7zB) |
-| 2.0  | [查看v2.0介绍视频](https://www.bilibili.com/video/BV1CG411f7ak) |
-| 3.0  | [查看v3.0介绍视频](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
-| 3.0  | 支持Windows + intel + openvino  |
-| 3.0  | 【v3.0安装包下载链接】：https://pan.quark.cn/s/4c49ae594e8f 提取码：qiqg |
-| 3.1  | [查看v3.1介绍视频](https://www.bilibili.com/video/BV1F64y1L7dq) |
-| 3.1  | 支持Windows + nvidia + tensorrt |
-| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
-| 3.1  | 【v3.1安装包下载链接】：https://pan.quark.cn/s/3bc39bf7200f 提取码：8NQv |
-| 3.2  | [查看v3.2介绍视频](https://www.bilibili.com/video/BV12g4y167u2) |
-| 3.2  | 支持Windows/Linux + intel + openvino |
-| 3.2  | 主要新增兼容Linux |
-| 3.2  | 【v3.2安装包下载链接】：https://pan.quark.cn/s/8f4a5d2db0f3 提取码：JZkH |
-| 3.3  | [查看v3.3介绍视频](https://www.bilibili.com/video/BV1pK421h74U) |
-| 3.3  | 支持Windows/Linux + intel + openvino |
-| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
-| 3.3  | 【v3.3安装包下载链接】：https://pan.quark.cn/s/497454c3db37 提取码：fMC4 |
-| 3.40  | [查看v3.40介绍视频](https://www.bilibili.com/video/BV1tH4y1G775) |
-| 3.40  | 支持Windows/Linux + 不限 + api |
-| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
-| 3.41  | [查看v3.41介绍视频](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
-| 3.41  | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
-| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
-| 3.41  | 【v3.41安装包下载链接】：https://pan.quark.cn/s/3cb3d32224e3 |
-| 3.42  | [查看v3.42介绍视频](https://www.bilibili.com/video/BV1rf421v74R) |
-| 3.42  | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
-| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
-| 3.43  | [查看v3.43介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
-| 3.43  | 支持Windows/Linux + intel,amd + openvino,onnxruntime  |
-| 3.43  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
-| 3.43  | 【v3.43安装包下载链接】：https://pan.quark.cn/s/bb8b7598e9a0 提取码：W9vU |
-| 4.x  | [v4.x安装包下载方式1](https://gitee.com/Vanishi/xcms)  |
-| 4.x  | [v4.x安装包下载方式2](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
+| v1.0  | [查看v1.0介绍视频](https://www.bilibili.com/video/BV1dG4y1k77o) |
+| -  | [查看v1.0源码第1讲介绍视频](https://www.bilibili.com/video/BV1L84y177xc) |
+| -  | [查看v1.0源码第2讲介绍视频](https://www.bilibili.com/video/BV1984y1L7zB) |
+| v2.0  | [查看v2.0介绍视频](https://www.bilibili.com/video/BV1CG411f7ak) |
+| v3.0  | [查看v3.0介绍视频](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
+| -  | 主要新增支持C++版openvino算法推理功能/后台管理全面升级 |
+| -  | 【v3.0安装包下载链接】：https://pan.quark.cn/s/4c49ae594e8f 提取码：qiqg |
+| v3.1  | [查看v3.1介绍视频](https://www.bilibili.com/video/BV1F64y1L7dq) |
+| -  | 主要新增支持C++版nvidia/tensorrt算法推理功能 |
+| -  | 【v3.1安装包下载链接】：https://pan.quark.cn/s/3bc39bf7200f 提取码：8NQv |
+| v3.2  | [查看v3.2介绍视频](https://www.bilibili.com/video/BV12g4y167u2) |
+| -  | 主要新增兼容Linux/intel/openvino |
+| -  | 【v3.2安装包下载链接】：https://pan.quark.cn/s/8f4a5d2db0f3 提取码：JZkH |
+| v3.3  | [查看v3.3介绍视频](https://www.bilibili.com/video/BV1pK421h74U) |
+| -  | 支持Windows/Linux + intel + openvino |
+| - | 主要新增支持摄像头管理模块，升级播放器插件模块 |
+| - | 【v3.3安装包下载链接】：https://pan.quark.cn/s/497454c3db37 提取码：fMC4 |
+| v3.40  | [查看v3.40介绍视频](https://www.bilibili.com/video/BV1tH4y1G775) |
+| -  | 支持Windows/Linux + 不限 + api |
+| -  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
+| v3.41  | [查看v3.41介绍视频](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
+| -  | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
+| -  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
+| -  | 【v3.41安装包下载链接】：https://pan.quark.cn/s/3cb3d32224e3 |
+| v3.42  | [查看v3.42介绍视频](https://www.bilibili.com/video/BV1rf421v74R) |
+| -  | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
+| -  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
+| v3.43  | [查看v3.43介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
+| -  | 支持Windows/Linux + intel,amd + openvino,onnxruntime  |
+| -  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
+| -  | 【v3.43安装包下载链接】：https://pan.quark.cn/s/bb8b7598e9a0 提取码：W9vU |
+| v3.44  | [查看v3.44介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
+| -  | 新增支持rk3588/rk3576/rknpu推理加速/rga加速，详细介绍编译和部署全过程  |
+| v4.x  | [v4.x安装包下载方式1](https://gitee.com/Vanishi/xcms)  |
+| v4.x  | [v4.x安装包下载方式2](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
 
 ### v3.x 获取源码
 * v3.x版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806

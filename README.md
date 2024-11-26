@@ -11,53 +11,57 @@
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
 * v4版本安装包下载地址 https://gitee.com/Vanishi/xcms
 
+
+### 视频行为分析系统版本介绍
+| 版本号 | 介绍 |
+| :----: | :----: |
+| 1.0  | [查看v1.0介绍视频](https://www.bilibili.com/video/BV1dG4y1k77o) |
+| 1.0  | [查看v1.0源码第1讲介绍视频](https://www.bilibili.com/video/BV1L84y177xc) |
+| 1.0  | [查看v1.0源码第2讲介绍视频](https://www.bilibili.com/video/BV1984y1L7zB) |
+| 2.0  | [查看v2.0介绍视频](https://www.bilibili.com/video/BV1CG411f7ak) |
+| 3.0  | [查看v3.0介绍视频](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
+| 3.0  | 支持Windows + intel + openvino  |
+| 3.0  | 【v3.0安装包下载链接】：https://pan.quark.cn/s/4c49ae594e8f 提取码：qiqg |
+| 3.1  | [查看v3.1介绍视频](https://www.bilibili.com/video/BV1F64y1L7dq) |
+| 3.1  | 支持Windows + nvidia + tensorrt |
+| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
+| 3.1  | 【v3.1安装包下载链接】：https://pan.quark.cn/s/3bc39bf7200f 提取码：8NQv |
+| 3.2  | [查看v3.2介绍视频](https://www.bilibili.com/video/BV12g4y167u2) |
+| 3.2  | 支持Windows/Linux + intel + openvino |
+| 3.2  | 主要新增兼容Linux |
+| 3.2  | 【v3.2安装包下载链接】：https://pan.quark.cn/s/8f4a5d2db0f3 提取码：JZkH |
+| 3.3  | [查看v3.3介绍视频](https://www.bilibili.com/video/BV1pK421h74U) |
+| 3.3  | 支持Windows/Linux + intel + openvino |
+| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
+| 3.3  | 【v3.3安装包下载链接】：https://pan.quark.cn/s/497454c3db37 提取码：fMC4 |
+| 3.40  | [查看v3.40介绍视频](https://www.bilibili.com/video/BV1tH4y1G775) |
+| 3.40  | 支持Windows/Linux + 不限 + api |
+| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
+| 3.41  | [查看v3.41介绍视频](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
+| 3.41  | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
+| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
+| 3.41  | 【v3.41安装包下载链接】：https://pan.quark.cn/s/3cb3d32224e3 |
+| 3.42  | [查看v3.42介绍视频](https://www.bilibili.com/video/BV1rf421v74R) |
+| 3.42  | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
+| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
+| 3.43  | [查看v3.43介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
+| 3.43  | 支持Windows/Linux + intel,amd + openvino,onnxruntime  |
+| 3.43  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
+| 3.43  | 【v3.43安装包下载链接】：https://pan.quark.cn/s/bb8b7598e9a0 提取码：W9vU |
+| 4.x  | [v4.x安装包下载方式1](https://gitee.com/Vanishi/xcms)  |
+| 4.x  | [v4.x安装包下载方式2](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
+
 ### v3.x 获取源码
 * v3.x版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
 * v3.x版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
 * 大家如果看到其他任何商家出售v3源代码，希望能够去举报，均是非法行为。后续将会对获取v3升级版本的源码，提高门槛，相信那些非法出售的商家可很难通过升级门槛，进而无法向用户提供升级版本。
 
-### v3.x 子版本介绍
-| 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
-| :----: | :----: | :----: | :----: | :----- |
-| 3.0  | Windows | intel | openvino  | [查看视频教程](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
-| 3.0  | 首次发布 |
-| 3.0  | 【夸克下载链接】：https://pan.quark.cn/s/4c49ae594e8f 提取码：qiqg |
-| 3.1  | Windows | nvidia | tensorrt | [查看视频教程](https://www.bilibili.com/video/BV1F64y1L7dq) |
-| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
-| 3.1  | 【夸克下载链接】：https://pan.quark.cn/s/3bc39bf7200f 提取码：8NQv |
-| 3.2  | Windows/Linux | intel | openvino | [查看视频教程](https://www.bilibili.com/video/BV12g4y167u2) |
-| 3.2  | 主要新增支持Linux |
-| 3.2  | 【夸克下载链接】：https://pan.quark.cn/s/8f4a5d2db0f3 提取码：JZkH |
-| 3.3  | Windows/Linux | intel | openvino | [查看视频教程](https://www.bilibili.com/video/BV1pK421h74U) |
-| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
-| 3.3  | 【夸克下载链接】：https://pan.quark.cn/s/497454c3db37 提取码：fMC4 |
-| 3.40  | Windows/Linux | 不限 | api | [查看视频教程](https://www.bilibili.com/video/BV1tH4y1G775) |
-| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
-| 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
-| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
-| 3.41  | 【夸克下载链接】：https://pan.quark.cn/s/3cb3d32224e3 |
-| 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
-| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
-| 3.43  | Windows/Linux | intel,amd | openvino,onnxruntime  | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
-| 3.43  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
-| 3.43  | 【夸克下载链接】：https://pan.quark.cn/s/bb8b7598e9a0 提取码：W9vU |
 
+### 相关视频
 
-### v1,v2,v3 相关视频教程
+* [C++调用Python，支持传递图片格式的数据，支持调用Python版AI算法模型，C++传递Mat格式的图片数据到Python](https://www.bilibili.com/video/BV1Vd4y1p7GE)
+* [Ubuntu20.04编译v3.2版本视频](https://www.bilibili.com/video/BV1Z94y1u7u8)
 
-* v1版本视频介绍地址 https://www.bilibili.com/video/BV1dG4y1k77o
-* v1版本源码讲解（1）拉流，解码，实时算法分析，合成报警视频，编码，推流 https://www.bilibili.com/video/BV1L84y177xc
-* v1版本源码讲解（2）音频解码，音频重采样，音频编码，合成报警视频 https://www.bilibili.com/video/BV1984y1L7zB
-* C++调用Python，支持传递图片格式的数据，支持调用Python版AI算法模型，C++传递Mat格式的图片数据到Python https://www.bilibili.com/video/BV1Vd4y1p7GE
-* v2版本视频介绍地址 https://www.bilibili.com/video/BV1CG411f7ak
-* v3.0版本视频介绍地址 https://www.bilibili.com/video/BV1Xy4y1P7M2
-* v3.1版本视频介绍地址 https://www.bilibili.com/video/BV1F64y1L7dq
-* v3.2版本视频介绍地址 https://www.bilibili.com/video/BV12g4y167u2
-* （Ubuntu编译v3.2）v3.2版本视频介绍地址 https://www.bilibili.com/video/BV1Z94y1u7u8
-* v3.3版本视频介绍地址 https://www.bilibili.com/video/BV1pK421h74U
-* v3.40版本视频介绍地址 https://www.bilibili.com/video/BV1tH4y1G775
-* v3.41版本视频介绍地址 https://www.bilibili.com/video/BV1hJ4m1w7tP
-* v3.42版本视频介绍地址 https://www.bilibili.com/video/BV1rf421v74R
 
 ### v1,v2,v3 主要区别
 * （1）v1和v2算法模型推理仅支持Python版OpenVINO，v3支持C++版本OpenVINO，TensorRT，ONNXRuntime，v1和v2支持yolo5和ssd检测算法，v3则支持yolo8

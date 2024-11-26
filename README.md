@@ -9,36 +9,38 @@
 * v1版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v1
 * v2版本开源地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v2
 * v3版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v3
-* v4版本安装包下载地址 https://gitee.com/Vanishi/BXC_VideoAnalyzer_v4
+* v4版本安装包下载地址 https://gitee.com/Vanishi/xcms
 
-### v3 获取源码
-* v3版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
-* v3版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
+### v3.x 获取源码
+* v3.x版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806
+* v3.x版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
 * 大家如果看到其他任何商家出售v3源代码，希望能够去举报，均是非法行为。后续将会对获取v3升级版本的源码，提高门槛，相信那些非法出售的商家可很难通过升级门槛，进而无法向用户提供升级版本。
 
-### v3 更新记录
-| 子版本 | 更新功能点  |
-| :----: | :----- |
-| 3.0  | 见3.0介绍视频：https://www.bilibili.com/video/BV1Xy4y1P7M2 |
-| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
-| 3.2  | 主要新增支持Linux |
-| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
-| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
-| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
-| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
-| 3.43  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
-
-### v3不同版本支持硬件和系统说明
+### v3.x 子版本介绍
 | 版本号 | 操作系统 | 硬件 | 推理引擎 | 视频介绍地址 |
 | :----: | :----: | :----: | :----: | :----- |
 | 3.0  | Windows | intel | openvino  | [查看视频教程](https://www.bilibili.com/video/BV1Xy4y1P7M2) |
+| 3.0  | 首次发布 |
+| 3.0  | 【夸克下载链接】：https://pan.quark.cn/s/4c49ae594e8f 提取码：qiqg |
 | 3.1  | Windows | nvidia | tensorrt | [查看视频教程](https://www.bilibili.com/video/BV1F64y1L7dq) |
+| 3.1  | 主要新增支持C++版tensorrt算法推理功能 |
+| 3.1  | 【夸克下载链接】：https://pan.quark.cn/s/3bc39bf7200f 提取码：8NQv |
 | 3.2  | Windows/Linux | intel | openvino | [查看视频教程](https://www.bilibili.com/video/BV12g4y167u2) |
+| 3.2  | 主要新增支持Linux |
+| 3.2  | 【夸克下载链接】：https://pan.quark.cn/s/8f4a5d2db0f3 提取码：JZkH |
 | 3.3  | Windows/Linux | intel | openvino | [查看视频教程](https://www.bilibili.com/video/BV1pK421h74U) |
+| 3.3  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
+| 3.3  | 【夸克下载链接】：https://pan.quark.cn/s/497454c3db37 提取码：fMC4 |
 | 3.40  | Windows/Linux | 不限 | api | [查看视频教程](https://www.bilibili.com/video/BV1tH4y1G775) |
+| 3.40  | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
 | 3.41  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
+| 3.41  | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
+| 3.41  | 【夸克下载链接】：https://pan.quark.cn/s/3cb3d32224e3 |
 | 3.42  | Windows/Linux | intel,amd,rk3588等 | onnxruntime | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
+| 3.42  | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
 | 3.43  | Windows/Linux | intel,amd | openvino,onnxruntime  | [查看视频教程](https://www.bilibili.com/video/BV1rf421v74R) |
+| 3.43  | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
+| 3.43  | 【夸克下载链接】：https://pan.quark.cn/s/bb8b7598e9a0 提取码：W9vU |
 
 
 ### v1,v2,v3 相关视频教程
@@ -67,13 +69,13 @@
 ### 快速体验程序
 
 #### Windows版启动运行
-* 第一步下载程序：比如切换到v3.2_windows_exe，这表示运行v3.2版本的Windows版本，按照"下载地址.txt"下载软件
-* 第二步运行程序：下载后，双击 VideoAnalyzer.exe启动程序，观察窗口提示如果没有报错，即表示启动成功
+* 第一步下载程序：点击 "克隆/下载"按钮->下载ZIP
+* 第二步运行程序：下载ZIP后，解压ZIP，双击 VideoAnalyzer.exe启动程序，观察窗口提示如果没有报错，即表示启动成功
 * 第三步打开程序：在浏览器输入 http://127.0.0.1:9001 系统默认账号 用户名：admin 密码：admin888
 * 第四步停止程序：关闭启动程序窗口即可
 
 #### Linux版启动运行
-* 需要自己获得源码编译运行
+* 需要获取源码后编译运行
 
 ### 软件截图
 

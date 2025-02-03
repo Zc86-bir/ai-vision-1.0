@@ -46,8 +46,9 @@
 |   | 【v3.43安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 | v3.44  | [查看v3.44介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
 |   | 新增支持rk3588/rk3576/rknpu推理加速/rga加速，详细介绍编译和部署全过程  |
-| v4.x  | [v4.x安装包下载方式1](https://gitee.com/Vanishi/xcms)  |
-| v4.x  | [v4.x安装包下载方式2](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
+| v3.45  | [查看v3.45介绍视频](https://www.bilibili.com/video/BV1wfCBYFEVD) |
+|   | 主要支持openvino/tensorrt/onnxruntime推理yolo，部署要求：设备必须包含支持CUDA12.0的英伟达显卡  |
+| v4.x  | [v4.x安装包下载](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
 
 ### v3.x 获取源码
 * v3.x版本源码购买地址（淘宝） https://item.taobao.com/item.htm?id=746326947806

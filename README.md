@@ -17,10 +17,10 @@
 * 大家如果看到其他任何商家出售v3源代码，希望能够去举报，均是非法行为。后续将会对获取v3升级版本的源码，提高门槛，相信那些非法出售的商家可很难通过升级门槛，进而无法向用户提供升级版本。
 
 ### v3.46特别说明
-* v3.46引入了视觉多模态大模型MiniCPM，由于大模型文件比较大，因此单独放在了网盘中，需要的用户可以前往下载
+* v3.46引入了视觉多模态大模型MiniCPM-o，由于MiniCPM-o的模型文件比较大，因此单独放在了网盘中，需要体验该功能的用户请前往网盘下载模型
 * 【夸克网盘】模型下载地址：https://pan.quark.cn/s/de19d10e04a4
 * 【百度网盘】模型下载地址：https://pan.baidu.com/s/1WZ6p3_MdCkeHlEA0pLRmMQ?pwd=xcxc
-* 前往网盘下载ggml-model-Q4_K_M.gguf和mmproj-model-f16.gguf，下载后分别拷贝至Analyzer/models目录下
+* 下载ggml-model-Q4_K_M.gguf和mmproj-model-f16.gguf，下载后分别拷贝至Analyzer/models目录下
 
 
 ### 视频行为分析系统各版本介绍

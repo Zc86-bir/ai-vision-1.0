@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多模态智能分析系统</title>
+    <style>
+        :root {
+            --primary-color: #2196F3;
+            --secondary-color: #4CAF50;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .input-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .input-panel {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+
+        .upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary-color);
+            background: #f8fbff;
+        }
+
+        #imagePreview {
+            max-width: 100%;
+            max-height: 350px;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .prompt-input {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            resize: vertical;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .prompt-input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        .analyze-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.2s;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .analyze-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .result-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+
+        .result-card {
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            background: #f8f9fa;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+
+        .analysis-type {
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .confidence {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #e3f2fd;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .timestamp {
+            float: right;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #333;">多模态智能分析系统</h1>
+
+    <div class="input-container">
+        <!-- 图片上传区域 -->
+        <div class="input-panel">
+            <h3>图片输入</h3>
+            <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                <p>📷 点击上传图片或拖放文件</p>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <img id="imagePreview" alt="图片预览">
+            </div>
+        </div>
+
+        <!-- 文本输入区域 -->
+        <div class="input-panel">
+            <h3>文本提示词</h3>
+            <textarea
+                class="prompt-input"
+                placeholder="请输入分析提示词（例如：描述图片内容、识别特定对象、分析场景等）..."
+                id="promptInput"></textarea>
+        </div>
+    </div>
+
+    <button class="analyze-btn" onclick="startAnalysis()">开始多模态分析</button>
+
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+        <p>正在分析中，请稍候...</p>
+    </div>
+
+    <div class="result-section" id="resultSection">
+        <h2>综合分析结果</h2>
+        <div id="analysisResults"></div>
+    </div>
+
+    <script>
+        // 图片上传处理
+        const fileInput = document.getElementById('fileInput');
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const preview = document.getElementById('imagePreview');
+                    preview.src = event.target.result;
+                    preview.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // 拖放上传功能
+        const uploadArea = document.querySelector('.upload-area');
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = var(--primary-color);
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const file = e.dataTransfer.files[0];
+            if (file && file.type.startsWith('image/')) {
+                fileInput.files = e.dataTransfer.files;
+                const event = new Event('change');
+                fileInput.dispatchEvent(event);
+            }
+        });
+
+        // 分析功能
+        async function startAnalysis() {
+            const imageFile = fileInput.files[0];
+            const prompt = document.getElementById('promptInput').value.trim();
+
+            if (!imageFile && !prompt) {
+                alert('请至少提供图片或输入提示词');
+                return;
+            }
+
+            showLoading(true);
+
+            // 模拟API调用
+            setTimeout(() => {
+                const mockResponse = {
+                    analysisType: "多模态分析",
+                    timestamp: new Date().toLocaleTimeString(),
+                    content: {
+                        imageAnalysis: {
+                            objects: ["山脉", "湖泊", "云朵"],
+                            dominantColors: ["#87CEEB", "#228B22", "#FFFFFF"],
+                            sceneType: "自然风景"
+                        },
+                        textAnalysis: {
+                            answer: "根据图片和提示词分析，这是一张清晨拍摄的山湖景观照片，湖面平静如镜，远处山脉轮廓清晰，天空有少量积云。",
+                            keywords: ["自然", "山水", "晨光"]
+                        },
+                        confidence: 92
+                    }
+                };
+
+                displayResults(mockResponse);
+                showLoading(false);
+            }, 2000);
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('analysisResults');
+
+            const resultHTML = `
+                <div class="result-card">
+                    <span class="timestamp">${data.timestamp}</span>
+                    <div class="analysis-type">${data.analysisType}</div>
+
+                    ${data.content.imageAnalysis ? `
+                    <div class="result-section">
+                        <h4>图像分析结果</h4>
+                        <p>识别对象：${data.content.imageAnalysis.objects.join(', ')}</p>
+                        <p>主要颜色：${data.content.imageAnalysis.dominantColors.map(c =>
+                            `<span style="background:${c}; padding:2px 8px; border-radius:3px">${c}</span>`
+                        ).join(' ')}</p>
+                        <p>场景分类：${data.content.imageAnalysis.sceneType}</p>
+                    </div>` : ''}
+
+                    ${data.content.textAnalysis ? `
+                    <div class="result-section">
+                        <h4>文本分析响应</h4>
+                        <p>${data.content.textAnalysis.answer}</p>
+                        <p>提取关键词：${data.content.textAnalysis.keywords.map(k =>
+                            `<span class="tag">${k}</span>`
+                        ).join(' ')}</p>
+                    </div>` : ''}
+
+                    <div class="confidence">置信度：${data.content.confidence}%</div>
+                </div>
+            `;
+
+            resultsDiv.innerHTML = resultHTML + resultsDiv.innerHTML; // 最新结果置顶
+        }
+
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "version": "3.43",
+  "version": "3.46",
   "host": "127.0.0.1",
   "adminPort": 9001,
   "mediaHttpPort": 9002,
@@ -10,8 +10,5 @@
   "modelDir": "Analyzer\\models",
   "recordLogInterval": 30,
   "workerConcurrency": 20,
-  "algorithmApiUrl": "http://127.0.0.1:9703/algorithm",
-  "algorithmOpenVINOFaceDetectDevice": "GPU",
-  "recognition_distance_thresh":0.5,
-  "detect_face_score_thresh":0.5
+  "algorithmApiUrl": "http://127.0.0.1:9703/algorithm"
 }

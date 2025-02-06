@@ -36,31 +36,32 @@
 |   | 主要新增支持C++版nvidia/tensorrt算法推理功能 |
 | v3.2  | [查看v3.2介绍视频](https://www.bilibili.com/video/BV12g4y167u2) |
 |   | 主要新增兼容Linux/intel/openvino |
-|   | 【v3.2安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
+|   | v3.2【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 | v3.3  | [查看v3.3介绍视频](https://www.bilibili.com/video/BV1pK421h74U) |
 |   | 支持Windows/Linux + intel + openvino |
 |  | 主要新增支持摄像头管理模块，升级播放器插件模块 |
-|  | 【v3.3安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
+|  | v3.3【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 | v3.40  | [查看v3.40介绍视频](https://www.bilibili.com/video/BV1tH4y1G775) |
 |   | 支持Windows/Linux + 不限 + api |
 |   | 主要新增支持API类型的算法调用模块，新增支持C++版dlib库 |
 | v3.41  | [查看v3.41介绍视频](https://www.bilibili.com/video/BV1hJ4m1w7tP) |
 |   | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
 |   | 主要新增支持onnxruntime推理引擎，优化性能，onnxruntime可以支持AMD，RK3588等硬件 |
-|   | 【v3.41安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
+|   | v3.41【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 | v3.42  | [查看v3.42介绍视频](https://www.bilibili.com/video/BV1rf421v74R) |
 |   | 支持Windows/Linux + intel,amd,rk3588等 + onnxruntime |
 |   | 主要新增支持基于cnnlstm视频分类网络的算法模型 |
 | v3.43  | [查看v3.43介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
 |   | 支持Windows/Linux + intel,amd + openvino,onnxruntime  |
 |   | 主要新增人员管理，人脸检测，人脸特征提取，人脸识别，无感考勤等功能 |
-|   | 【v3.43安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
+|   | v3.43【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 | v3.44  | [查看v3.44介绍视频](https://www.bilibili.com/video/BV14a2NYJE6i) |
 |   | 新增支持rk3588/rk3576/rknpu推理加速/rga加速，详细介绍编译和部署全过程  |
 | v3.45  | [查看v3.45介绍视频](https://www.bilibili.com/video/BV1wfCBYFEVD) |
 |   | 主要支持openvino/tensorrt/onnxruntime推理yolo，部署要求：设备必须包含支持CUDA12.0的英伟达显卡  |
 | v3.46  | 发布于2025/02/05 |
 |   | 最大的特点是引入了多模态视觉大模型，基于lamma.cpp推理  |
+|   | v3.46【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 | v4.x  | [v4.x安装包下载](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
 
 

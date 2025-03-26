@@ -8,7 +8,7 @@
   "mediaSecret": "aqxY9ps21fyhyKNRyYpGvJCTp1JBeGOM",
   "uploadDir": "Admin\\static\\upload",
   "modelDir": "Analyzer\\models",
-  "recordLogInterval": 30,
+  "recordLogInterval": 20,
   "workerConcurrency": 20,
   "algorithmApiUrl": "http://127.0.0.1:8070/receiveImageLLMVL"
 }

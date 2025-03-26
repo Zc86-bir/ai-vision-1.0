@@ -16,12 +16,9 @@
 * v3.x版本源码购买地址（闲鱼） https://h5.m.goofish.com/item?id=744350097882
 * 大家如果看到其他任何商家出售v3源代码，希望能够去举报，均是非法行为。后续将会对获取v3升级版本的源码，提高门槛，相信那些非法出售的商家可很难通过升级门槛，进而无法向用户提供升级版本。
 
-### v3.46特别说明
-* v3.46引入了视觉多模态大模型MiniCPM-o，由于MiniCPM-o的模型文件比较大，因此单独放在了网盘中，需要体验该功能的用户请前往网盘下载模型
-* 【夸克网盘】模型下载地址：https://pan.quark.cn/s/de19d10e04a4
-* 【百度网盘】模型下载地址：https://pan.baidu.com/s/1WZ6p3_MdCkeHlEA0pLRmMQ?pwd=xcxc
-* 下载ggml-model-Q4_K_M.gguf和mmproj-model-f16.gguf，下载后分别拷贝至Analyzer/models目录下
-
+### 当前最新版本v3.48
+* 主要变化：支持接入Qwen2.5 VL，Qwen2.0 VL，MiniCPM-o 2.6等多模态大模型
+* 如需接入多模态大模型，请一定参考对应版本的视频教程 
 
 ### 视频行为分析系统各版本介绍
 | 版本号 | 介绍 |
@@ -59,10 +56,14 @@
 |   | 新增支持rk3588/rk3576/rknpu推理加速/rga加速，详细介绍编译和部署全过程  |
 | v3.45  | [查看v3.45介绍视频](https://www.bilibili.com/video/BV1wfCBYFEVD) |
 |   | 主要支持openvino/tensorrt/onnxruntime推理yolo，部署要求：设备必须包含支持CUDA12.0的英伟达显卡  |
-| v3.46  | 发布于2025/02/05 |
-|   | 最大的特点是引入了多模态视觉大模型，基于lamma.cpp推理  |
+| v3.46  | 发布于2025/02/05 [查看v3.46介绍视频](https://www.bilibili.com/video/BV1Y7NneSEim)  |
+|   | 最大的特点是引入了MiniCPM-o 2.6多模态视觉大模型，基于lamma.cpp直接推理  |
 |   | v3.46【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
-| v4.x  | [v4.x安装包下载](https://beixiaocai.yuque.com/org-wiki-beixiaocai-vo72oa/xcms/e05dce83e5129785b9f316978a14b896)  |
+| v3.47  | 发布于2025/03/04 [查看v3.47介绍视频](https://www.bilibili.com/video/BV1Ed9RYaEha) |
+|   | 支持arm/x86-Linux/Windows编译，支持rk3588/昇腾/算能/树莓派/英特尔/AMD/海光，支持yolo8/yolo11/yolo12/openvino/onnxruntime  |
+| v3.48  | 发布于2025/03/26 |
+|   | 支持接入Qwen2.5 VL，Qwen2.0 VL，MiniCPM-o 2.6等多模态大模型 |
+|   | v3.48【完整安装包下载链接】：https://pan.quark.cn/s/b8989d2cc312 |
 
 
 ### 相关视频

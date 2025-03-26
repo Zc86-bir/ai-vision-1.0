@@ -1,5 +1,5 @@
 {
-  "version": "3.46",
+  "version": "3.48",
   "host": "127.0.0.1",
   "adminPort": 9001,
   "mediaHttpPort": 9002,
@@ -10,5 +10,5 @@
   "modelDir": "Analyzer\\models",
   "recordLogInterval": 30,
   "workerConcurrency": 20,
-  "algorithmApiUrl": "http://127.0.0.1:9703/algorithm"
+  "algorithmApiUrl": "http://127.0.0.1:8070/receiveImageLLMVL"
 }

@@ -10,5 +10,6 @@
   "modelDir": "Analyzer\\models",
   "recordLogInterval": 20,
   "workerConcurrency": 20,
+  "fontPath": "fonts\\tsimhei.ttf",
   "algorithmApiUrl": "http://127.0.0.1:8070/receiveImageLLMVL"
 }

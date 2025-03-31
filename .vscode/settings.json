@@ -1,0 +1,5 @@
+{
+    "Lingma.cloudModelAutoTriggerGenerateLength": "long",
+    "Lingma.cloudModelManualTriggerGenerateLength": "long",
+    "Lingma.localMachineModelMaxCandidateNum": 5
+}
